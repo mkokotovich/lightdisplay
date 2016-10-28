@@ -1,0 +1,16 @@
+{% load arduino %}
+{% load videofeed %}
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Light Display</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/display.css' %}">
+    </head>
+    <body>
+        <h1>Welcome to the Light Display</h1>
+        <div class="arduino">{% insert_arduino_controls %}</div>
+        <div class="videofeed">{% insert_videofeed %}</div>
+    </body>
+</html>
