@@ -17,4 +17,4 @@ class CommandHistory(models.Model):
     command_status = models.CharField(max_length=3, choices=COMMAND_STATUS_CHOICES, default=SUCCESS)
 
     def __str__(self):
-        return "{}: {} ({})".format(str(command_date), command, command_status)
+        return "{}: {} ({})".format(str(self.command_date), self.command, self.command_status)
