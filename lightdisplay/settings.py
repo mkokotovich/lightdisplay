@@ -37,9 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'arduino',
-    'videofeed',
-    'display',
+    'arduino.apps.ArduinoConfig',
+    'videofeed.apps.VideofeedConfig',
+    'display.apps.DisplayConfig',
 ]
 
 MIDDLEWARE = [
